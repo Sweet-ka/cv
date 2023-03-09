@@ -123,7 +123,7 @@
                   let minI = 0;
                   let minJ = 0;
 
-                  while (minI &lt;= maxI && minJ &lt;= maxJ) {
+                  while (minI &lt;= maxI &amp&amp minJ &lt;= maxJ) {
                     for (let j = minJ; j &lt;= maxJ; j++) {
                       snailBody.push(array[minI][j])
                     }
@@ -134,12 +134,12 @@
                     }
                     maxJ--;
 
-                    for (let j = maxJ; j >= minJ; j--) {
+                    for (let j = maxJ; j &gt;= minJ; j--) {
                       snailBody.push(array[maxI][j]);
                     }
                     maxI--;
 
-                    for (let i = maxI; i >= minI; i--) {
+                    for (let i = maxI; i &gt;= minI; i--) {
                       snailBody.push(array[i][minJ]);
                     }
                     minJ++;
